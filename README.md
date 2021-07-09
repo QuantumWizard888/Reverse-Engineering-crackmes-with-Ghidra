@@ -5,4 +5,4 @@ A collection of crackme solutions created using **Ghidra** SRE (software Reverse
 
 ## === List of crackmes solutions === ##
 
-1. [Crackme 1](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1_solution.md)
+1. [Crackme #1](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1_solution.md)
