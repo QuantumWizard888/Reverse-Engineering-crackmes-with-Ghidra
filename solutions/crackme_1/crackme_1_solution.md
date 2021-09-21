@@ -42,6 +42,16 @@ Then use filter to find a word in the asswembly code that associate with a passw
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/8.PNG">
 
-Indeed this is a good start! We found a whole program notiofication that the password we entered is a valid one. Double click to see its position in assembly code.
+Indeed this is a good start! We found a whole program notiofication that the password we entered is a valid one. Ghidra says that it's location is **0040213c**. Double click to go to its position in assembly code.
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/9.PNG">
+
+As you dear reader already know everything the program does, buzzes, whispers, - all of it has its own interpretation in terms of programming code. We just need to find that code. And Ghidra helps us! You see the XREF notation? It's a key to our solution: reference to the function (**FUN_00401080**) which contains code that prints out the phrase about correct password.
+
+Click the XREF marker twice aftert you hover it:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/10.png">
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/11.PNG">
+
+And there it is. The middle window shows you the assembly code of the core function that does all the work of calculating the correctness of the password you enter. Right window is the 
