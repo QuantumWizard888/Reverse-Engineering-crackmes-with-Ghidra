@@ -56,7 +56,5 @@ Click the XREF marker twice aftert you hover it:
 
 And there it is. The middle window shows you the assembly code of the core function that does all the work of calculating the correctness of the password you enter. Right window is the Decompiler window, it shows the decompiled C code produced by Ghidra. And the decompiled source code is the last battleground where we find our victory against this little crackme!
 
-Just look at the code. What do we have here?
-1.
-2.
-3.
+Just look at the code. What do we see here?
+
