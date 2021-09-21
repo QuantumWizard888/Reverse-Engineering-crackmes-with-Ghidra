@@ -29,4 +29,11 @@ Step 4:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/6.PNG">
 
-And we finally opened the file in a Code Browser where all magic happens!
+And we finally opened the file in a Code Browser where all magic happens! I hope you've already watched the great Ghidra introduction video I've mentioned on the main page of this tutorial series, so we may consider that you are already familiar with the Ghidra UI.
+
+As we've discovered the crackme has it's own classic "Please enter the password... blah blah" procedure as well as the error output with the furious notification that the password you've entered is wrong. So if we know what the phrase the machine gives us when we do something wrong, we can definitely find the phrase when the password is correct.
+
+Our next step is to find a string the crackme outputs in case we feed it with a valid password. This time we use string search and filter.
+Open "Search" --> "For Strings..."
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/7.PNG">
