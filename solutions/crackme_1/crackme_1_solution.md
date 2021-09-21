@@ -11,4 +11,22 @@ The author of this crackme says that is very simple one to solve, but first we h
 
 As author mentioned in the description this crackme accepts only numbers. So we have 1 solid clue in our search for the key. Let's open the Code Browser and see what's under the hood of this crackme!
 
+First we need to import the file to our project and then start the analyze process. Just use the default options to run the analysis.
 
+Step 1:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/3.PNG">
+
+Step 2:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/4.PNG">
+
+Step 3:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/5.PNG">
+
+Step 4:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/6.PNG">
+
+And we finally opened the file in a Code Browser where all magic happens!
