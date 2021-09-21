@@ -36,4 +36,12 @@ As we've discovered the crackme has it's own classic "Please enter the password.
 Our next step is to find a string the crackme outputs in case we feed it with a valid password. This time we use string search and filter.
 Open "Search" --> "For Strings..."
 
-<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/7.PNG">
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/7.png">
+
+Then use filter to find a word in the asswembly code that associate with a password we need. For example we take "correct" as a bait =)
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/8.PNG">
+
+Indeed this is a good start! We found a whole program notiofication that the password we entered is a valid one. Double click to see its position in assembly code.
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/9.PNG">
