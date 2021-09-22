@@ -46,7 +46,7 @@ Indeed this is a good start! We found a whole program notiofication that the pas
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/9.PNG">
 
-As you dear reader already know everything the program does, buzzes, whispers, - all of it has its own interpretation in terms of programming code. We just need to find that code. And Ghidra helps us! You see the XREF notation? It's a key to our solution: reference to the function **```FUN_00401080```** which contains code that prints out the phrase about correct password.
+As you dear reader already know everything the program does, buzzes, whispers, - all of it has its own interpretation in terms of programming code. We just need to find that code. And Ghidra helps us! You see the XREF marker? It's a key to our solution: reference to the function **```FUN_00401080```** which contains code that prints out the phrase about correct password.
 
 Click the XREF marker twice after you hover it:
 
@@ -54,7 +54,7 @@ Click the XREF marker twice after you hover it:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/11.PNG">
 
-And there it is. The middle window shows you the assembly code of the core function that does all the work of calculating the correctness of the password you enter. Right window is the Decompiler window, it shows the decompiled C code produced by Ghidra. And the decompiled source code is the last battleground where we find our victory against this little crackme!
+And there it is. The middle window shows you the assembly code of the core function that does all the work of calculating the correctness of the password you enter. Right window is the Decompiler window, it shows the decompiled C code produced by Ghidra. And the decompiled source code contains all we need to solve this crackme.
 
 Just look at the code. What do we see here?
 
