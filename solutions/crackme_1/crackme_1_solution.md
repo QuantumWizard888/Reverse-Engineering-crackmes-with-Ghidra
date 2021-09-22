@@ -48,7 +48,7 @@ Indeed this is a good start! We found a whole program notiofication that the pas
 
 As you dear reader already know everything the program does, buzzes, whispers, - all of it has its own interpretation in terms of programming code. We just need to find that code. And Ghidra helps us! You see the XREF notation? It's a key to our solution: reference to the function (**FUN_00401080**) which contains code that prints out the phrase about correct password.
 
-Click the XREF marker twice aftert you hover it:
+Click the XREF marker twice after you hover it:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/10.png">
 
