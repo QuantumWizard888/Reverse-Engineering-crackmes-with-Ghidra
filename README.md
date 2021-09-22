@@ -12,3 +12,7 @@ For learning how to create a project in Ghidra and how to add files to it read [
 ## === Resources === ##
 * **Ghidra**: https://github.com/NationalSecurityAgency/ghidra/
 * **Ghidra courses**: https://ghidra.re/online-courses/
+* **x86 Assembly Guide**: https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
+* **x86 Assembly Wikibooks guide**: https://en.wikibooks.org/wiki/X86_Assembly
+* **(RU) Уроки ассемблера**: https://ravesli.com/uroki-assemblera/
+* **(RU) Введение в ассемблер**: http://av-assembler.ru/asm/afd/asm.htm
