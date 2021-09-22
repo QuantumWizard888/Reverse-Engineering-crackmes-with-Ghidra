@@ -16,4 +16,4 @@ For learning how to create a project in Ghidra and how to add files to it read [
 * **x86 Assembly Wikibooks guide**: https://en.wikibooks.org/wiki/X86_Assembly
 * **(RU) Уроки ассемблера**: https://ravesli.com/uroki-assemblera/
 * **(RU) Введение в ассемблер**: http://av-assembler.ru/asm/afd/asm.htm
-* **Repository of crackmes**: https://crackmes.one/
+* **Repository of crackmes for training your skills**: https://crackmes.one/
