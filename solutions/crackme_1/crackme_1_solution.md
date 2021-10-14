@@ -1,4 +1,4 @@
-# === Crackme #1 solution ===
+# === TLOD's Easy Crackme solution ===
 
 **Source**: https://crackmes.one/crackme/608ecf9333c5d458ce0ec7d4
 
