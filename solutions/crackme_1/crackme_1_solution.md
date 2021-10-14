@@ -54,7 +54,37 @@ Click the XREF marker twice after you hover it:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/11.PNG">
 
-And there it is. The middle window shows you the assembly code of the core function that does all the work of calculating the correctness of the password you enter. Right window is the Decompiler window, it shows the decompiled C code produced by Ghidra. And the decompiled source code contains all we need to solve this crackme.
+And there it is. The middle window shows you the **ASSEMBLY CODE** of the core function that does all the work of calculating the correctness of the password you enter. Right window is the **DECOMPILER WINDOW**, it shows the decompiled C code produced by Ghidra. And the decompiled source code contains all we need to solve this crackme.
 
 Just look at the code. What do we see here?
 
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/12.PNG">
+
+We can already divide code into 3 parts:
+1. Lines [5-10] - variables declaration
+2. Lines [12-14] - Text output & text input section
+3. Line 15 - **if** comparison of variable and some value(!)
+4. Lines [16-22] - if comparison returns **TRUE**
+5. Lines [24-30] - if comparison returns **FALSE**
+
+For the purpose of curiuosity we can see that **FUN_00401020** and **FUN_00401050** are functions that call printf() and scanf() inside them respectively. Have a look at assembly and C code of these two fellows:
+
+=== **Decompiled C code** ===
+
+**FUN_00401020**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/13.PNG">
+
+**FUN_00401050**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/14.PNG">
+
+=== **Assembly code** ===
+
+**FUN_00401020**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/15.PNG">
+
+**FUN_00401050**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/16.PNG">
+
+Also, do you notice that printf() and scanf() are called as pointers to external functions:
+
+**FUN_00401020**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/17.PNG">
+
+**FUN_00401050**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/18.PNG">
+
+It is time to move back to our main() function. 
