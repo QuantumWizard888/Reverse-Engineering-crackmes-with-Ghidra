@@ -7,7 +7,7 @@ For learning how to create a project in Ghidra and how to add files to it read [
 
 ## === List of random crackmes solutions === ##
 
-1. [Crackme #1](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/crackme_1_solution.md)
+1. [TLOD's Easy Crackme](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/crackme_1_solution.md)
 
 ## === Resources === ##
 * **Ghidra**: https://github.com/NationalSecurityAgency/ghidra/
