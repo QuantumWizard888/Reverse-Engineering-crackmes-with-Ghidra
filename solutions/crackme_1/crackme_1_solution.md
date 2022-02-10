@@ -71,20 +71,32 @@ For the purpose of curiuosity we can see that **FUN_00401020** and **FUN_0040105
 
 === **Decompiled C code** ===
 
-**FUN_00401020**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/13.PNG">
+**FUN_00401020**:
 
-**FUN_00401050**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/14.PNG">
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/13.PNG">
+
+**FUN_00401050**:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/14.PNG">
 
 === **Assembly code** ===
 
-**FUN_00401020**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/15.PNG">
+**FUN_00401020**:
 
-**FUN_00401050**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/16.PNG">
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/15.PNG">
 
-Also, do you notice that printf() and scanf() are called as pointers to external functions:
+**FUN_00401050**:
 
-**FUN_00401020**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/17.PNG">
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/16.PNG">
 
-**FUN_00401050**: <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/18.PNG">
+Also, do you notice that **printf()** and **scanf()** are called as pointers to external functions:
+
+**FUN_00401020**:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/17.PNG">
+
+**FUN_00401050**:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/18.PNG">
 
 It is time to move back to our main() function. 
