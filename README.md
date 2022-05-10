@@ -1,6 +1,6 @@
 # Reverse Engineering of crackmes with Ghidra
 
-## === Description === ##
+## === About === ##
 A collection of random crackme and programming puzzle solutions created using **Ghidra** SRE (Software Reverse Engineering) tool. This series of tutorials is for **complete beginners** in Assembly language (x86) and software reverse engineering (like me, lol). I created this repository because I wanted to share my solutions and approach, so anyone can learn something from it, and because I need practicing in both C/C++, ASM and reverse engineering. 
 
 For learning how to create a project in Ghidra and how to add files to it read [this short tutorial](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/Import_and_create_project_tutorial.md). Or you can just watch [this great tutorial](https://www.youtube.com/watch?v=fTGTnrgjuGA).
