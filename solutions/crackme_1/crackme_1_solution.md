@@ -112,8 +112,12 @@ In assembly window we see what happens:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/21.PNG">
 
-```JNZ``` instruction validates if the **ZERO flag** was set to 0 or 1: if **1** (comparison returns FALSE) it JUMPS to ```LAB_004010eb``` section where **printf()** displays "Wrong key!" string, if ZERO flag is set **0** (zero difference between comparable values, comparison returns true and values are equal) then **printf()** function is called which notifies that we've found the correct password (block of decompiled code 16-22 is executed). Let's try the strange key that we've found:
+```JNZ``` instruction validates if the **ZERO flag** was set to 0 or 1: if **1** (comparison returns FALSE) it JUMPS to ```LAB_004010eb``` section where **printf()** displays "Wrong key!" string, if ZERO flag is set **0** (zero difference between comparable values, comparison returns true and values are equal) then **printf()** function is called which notifies that we've found the correct password (block of decompiled code 16-22 is executed):
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/22.PNG">
+
+Let's try the strange key that we've found:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/23.PNG">
 
 YES! It is indeed the valid password. The victory is finally ours!
