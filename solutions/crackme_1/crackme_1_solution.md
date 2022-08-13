@@ -104,7 +104,7 @@ We know that our input value is written to **stack0xfffffff4** which has **int**
 
 In assembly window we see what happens:
 
-```CMP``` intruction compares the strange key with our input value by accesing it through pointer ```**dword ptr [EBP + local_c]**```. Next we have this:
+```CMP``` intruction compares the strange key with our input value by accesing it through pointer **```dword ptr [EBP + local_c]```**. Next we have this:
 
 ```JNZ``` instruction validates if the **ZERO flag** was set to 0 or 1: if **1** (comparison returns FALSE) it JUMPS to ```LAB_004010eb``` section where **printf()** displays "Wrong key!" string, if ZERO flag is set **0** (zero difference between comparable values, comparison returns true and values are equal) then **printf()** function is called which notifies that we've found the correct password (block of decompiled code 16-22 is executed). Let's try the strange key that we've found:
 
