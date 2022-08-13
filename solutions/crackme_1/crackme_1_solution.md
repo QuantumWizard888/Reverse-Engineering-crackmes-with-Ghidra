@@ -100,12 +100,20 @@ Also, do you notice that **printf()** and **scanf()** are called as pointers to 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/18.PNG">
 
 It is time to move back to our main() function.
-We know that our input value is written to **stack0xfffffff4** which has **int** type. At first we see that **printf()** function is called (**```FUN_00401020```**) which displays the welcoming words of program. In assembler it has ```CALL FUN_00401020``` instruction. Then ```CALL FUN_00401050``` is called, which is **scanf()** that writes the input value to **stack0xfffffff4**. And only then we see the main magic trick: the comparison of **stack0xfffffff4** value to some... key maybe? If we hover over the **0x11ca423e** value (the unknown entity whic is compared to our input value) we get an information pop-up which gives us the decimal value of this strange sequence: **298467902** (we can also get decimal convertation by just clicking the right mouse button on the value). 
+We know that our input value is written to **stack0xfffffff4** which has **int** type. At first we see that **printf()** function is called (**```FUN_00401020```**) which displays the welcoming words of program. In assembler it has ```CALL FUN_00401020``` instruction. Then ```CALL FUN_00401050``` is called, which is **scanf()** that writes the input value to **stack0xfffffff4**. And only then we see the main magic trick: the comparison of **stack0xfffffff4** value to some... key maybe? If we hover over the **0x11ca423e** value (the unknown entity whic is compared to our input value) we get an information pop-up which gives us the decimal value of this strange sequence: **298467902** (we can also get decimal convertation by just clicking the right mouse button on the value).
+
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/19.png">
+
 In assembly window we see what happens:
+
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/20.PNG">
+
 ```CMP``` intruction compares the strange key with our input value by accesing it through pointer **```dword ptr [EBP + local_c]```**. Next we have this:
+
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/21.PNG">
+
 ```JNZ``` instruction validates if the **ZERO flag** was set to 0 or 1: if **1** (comparison returns FALSE) it JUMPS to ```LAB_004010eb``` section where **printf()** displays "Wrong key!" string, if ZERO flag is set **0** (zero difference between comparable values, comparison returns true and values are equal) then **printf()** function is called which notifies that we've found the correct password (block of decompiled code 16-22 is executed). Let's try the strange key that we've found:
+
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/22.PNG">
+
 YES! It is indeed the valid password. The victory is finally ours!
