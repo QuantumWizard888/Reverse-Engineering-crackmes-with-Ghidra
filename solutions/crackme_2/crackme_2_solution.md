@@ -24,5 +24,10 @@ That's interesting. We've found the same string which is displayed on MessageBox
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/4.PNG">
 
+Clearly we've got to the point that many things uncover themselves. First, we know that phrase about INCORRECTness is stored in data segment ```004050d6```. Second, we also have found another data segment at adress ```0040508c``` with another phrase with presumably is displayed when the INPUT IS CORRECT.
+
+Now we can also see the function which references to these phrases: ```_CheckForPassword()```. After jumpin to its section we can see both the disassembled and decompiled code listing:
+
+
 
 WIP
