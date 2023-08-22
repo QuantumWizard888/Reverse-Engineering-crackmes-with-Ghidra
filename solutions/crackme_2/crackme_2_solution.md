@@ -72,8 +72,34 @@ The result of comparison is written to ```iVar1``` and then it "transported" to 
 
 Well, we've finally approached to the gates of cybernetic Oblivion, and we are ready to know the truth about this ```_password``` data segment. What is it?
 
-<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/11.PNG">
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/11_edited.PNG">
 
-YES! BINGO! The statically stored sequence of data is our password. And it is the string that has to be in **password.bin** in order to get the success messagebox.
+YES! The statically stored sequence of data is our password. And it is the string that has to be in **password.bin** in order to get the success messagebox.
 
-WIP
+As a last step we somehow have to write this string as BYTES to **password.bin**. And here we have 2 ways:
+
+- Manually edit the file using HEX editor
+- Create a programm that writes the data to this **password.bin** file
+
+We are programmers, so we'll make a program! And we'll make it as simple as possible. For that purpose we will use Python. Just create a program file with a name, for example, **pswd.py**. Open it and write this code to it:
+
+```
+msg = b'W269N-WFGWX-YVC9B-4J6C9-T83GX'
+
+with open('password.bin', 'wb') as f:
+
+    f.write(msg)
+```
+
+Nothing special here:
+1. Create ```msg``` variable with our string as bytes
+2. Using context manager open **password.bin** file in READ BYTES mode
+3. Write our string to file
+
+Execute the program. The location of your Python program must be the same as **password.bin** file.
+
+And after all the manipulations we're ready to run the crackme file again:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/12.PNG">
+
+The prize is ours!
