@@ -1,4 +1,4 @@
-![изображение](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/assets/42515446/447dd1f8-0eec-4105-8bfb-0dfec3b48c25)# === RedXen's C File CrackMe solution ===
+# === RedXen's C File CrackMe solution ===
 
 **Source**: https://crackmes.one/crackme/62de952533c5d44a934e997b
 
@@ -59,5 +59,21 @@ Let's analyze the decompiled C code of this function:
   - Line 16 we close **password.bin** file using ```_fclose()``` function
   - Line 17 is where we use ```_strcmp()``` function to compare the string we get from **password.bin** and some ```_password``` data (we'll check this later), the return value of ```_strcmp()``` function is written to ```iVar1``` variable
 - Line 19 we return ```iVar1``` value to the its calling environment
+
+Some notes about the code.
+
+```_PasswordFileExists()``` function usses ```_access()``` [function](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/access-waccess?view=msvc-170) to determine if a file is a read-only or not. To be short: it returns **0** if everything is OK, and -1 if not. In our decompiled code the return value "if everything IS NOT OK" (i.e. file doesn't exist or doesn't have the given access mode) is **1**. Otherwise, if the file can be opened with a mode provided the return value is **0**.
+
+So, after the program found the file it has to read the inner part of **password.bin** and then compare it to some data located at ```_password``` data segment. Yes, we're getting close to the solution, but be patient! ```_strcmp()``` function returns **0** if contains of the **password.bin** and ```_password``` equal.
+
+The result of comparison is written to ```iVar1``` and then it "transported" to ```_CheckForPassword()``` function which, if ```iVar1``` value is **0**, brings us to the success:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/10.PNG">
+
+Well, we've finally approached to the gates of cybernetic Oblivion, and we are ready to know the truth about this ```_password``` data segment. What is it?
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/11.PNG">
+
+YES! BINGO! The statically stored sequence of data is our password. And it is the string that has to be in **password.bin** in order to get the success messagebox.
 
 WIP
