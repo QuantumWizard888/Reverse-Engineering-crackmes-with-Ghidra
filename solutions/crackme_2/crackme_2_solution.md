@@ -1,4 +1,4 @@
-# === RedXen's C File CrackMe solution ===
+![изображение](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/assets/42515446/447dd1f8-0eec-4105-8bfb-0dfec3b48c25)# === RedXen's C File CrackMe solution ===
 
 **Source**: https://crackmes.one/crackme/62de952533c5d44a934e997b
 
@@ -22,6 +22,7 @@ As usual we create project, add our crackme EXE, analyze it with default setting
 
 That's interesting. We've found the same string which is displayed on MessageBox. Now we have to jump to it:
 
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/4.PNG">
 
 
 WIP
