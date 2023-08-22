@@ -72,7 +72,7 @@ The result of comparison is written to ```iVar1``` and then it "transported" to 
 
 Well, we've finally approached to the gates of cybernetic Oblivion, and we are ready to know the truth about this ```_password``` data segment. What is it?
 
-<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/11.PNG">
+
 
 YES! BINGO! The statically stored sequence of data is our password. And it is the string that has to be in **password.bin** in order to get the success messagebox.
 
