@@ -79,7 +79,7 @@ YES! The statically stored sequence of data is our password. And it is the strin
 As a last step we somehow have to write this string as BYTES to **password.bin**. And here we have 2 ways:
 
 - Manually edit the file using HEX editor
-- Create a programm that writes the data to this **password.bin** file
+- Create a program that writes the data to this **password.bin** file
 
 We are programmers, so we'll make a program! And we'll make it as simple as possible. For that purpose we will use Python. Just create a program file with a name, for example, **pswd.py**. Open it and write this code to it:
 
