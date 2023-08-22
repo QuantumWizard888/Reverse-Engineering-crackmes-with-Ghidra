@@ -16,5 +16,4 @@ Well, well, well! What do we have here? A Win32 GUI crackme that spills out bad 
 
 It's empty. But the file's name hints that it can relate to the INPUT that program checks before deciding its "correctness". And how we're gonna find out where is the key? Of course using our incomparable GHIDRA!
 
-
-
+WIP
