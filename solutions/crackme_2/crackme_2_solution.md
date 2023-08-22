@@ -102,4 +102,4 @@ And after all the manipulations we're ready to run the crackme file again:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/12.PNG">
 
-The prize is ours!
+The prize is in our hands!
