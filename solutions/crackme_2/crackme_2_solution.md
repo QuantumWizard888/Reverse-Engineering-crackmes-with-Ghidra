@@ -49,6 +49,11 @@ And that is not the part that we are interested in. There must be somthing that 
 
 Let's analyze the decompiled C code of this function:
 
-- Section
+- Lines [5-6] variables declaration
+- Line 7 is where FILE pointer is declared
+- Line 9 is where variable ```iVar1``` is initialized with return value of ```_PasswordFileExists()``` function
+- Lines [10-12] **if section** where value of **1** is assigned ```iVar1``` variable if ```_PasswordFileExists()``` returns **1**
+- Lines [13-18] **else section** if the iVar1 value is other than 1:
+  -
 
 WIP
