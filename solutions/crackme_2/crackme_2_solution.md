@@ -26,8 +26,25 @@ That's interesting. We've found the same string which is displayed on MessageBox
 
 Clearly we've got to the point that many things uncover themselves. First, we know that phrase about INCORRECTness is stored in data segment ```004050d6```. Second, we also have found another data segment at adress ```0040508c``` with another phrase with presumably is displayed when the INPUT IS CORRECT.
 
-Now we can also see the function which references to these phrases: ```_CheckForPassword()```. After jumpin to its section we can see both the disassembled and decompiled code listing:
+Now we can also see the function which references to these phrases: ```_CheckForPassword()```. After jumping to its section we can see both the disassembled and decompiled code listing:
 
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/5.PNG">
 
+Things start to become even more interesting. We can see the final destination for both CORRECT and INCORRECT input that:
+
+- Either calls ```_ShowInformationMessage()``` function if input is **CORRECT**
+- Or calls ```_ShowErrorMessage()``` function if input is **NOT CORRECT**
+
+Both of these message displaying functions actually call another internal Windows GUI function ```MessageBoxA()```:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/6.PNG">
+
+And that is not the part that we are interested in. There must be somthing that activates the choice between those 2 phrases. And it is triggered in ```_ReadPasswordFromFile()``` function whic is inside of ```_CheckForPassword()``` function. So what we're waiting for?! IN TO THE DUNGEON! The dissasembly and decompiled "face" of ```_ReadPasswordFromFile()``` function is this:
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/7.PNG">
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/8.PNG">
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/9.PNG">
 
 WIP
