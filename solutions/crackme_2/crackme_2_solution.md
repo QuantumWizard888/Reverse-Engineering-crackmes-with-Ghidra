@@ -47,4 +47,8 @@ And that is not the part that we are interested in. There must be somthing that 
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/9.PNG">
 
+Let's analyze the decompiled C code of this function:
+
+- Section
+
 WIP
