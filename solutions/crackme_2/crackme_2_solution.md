@@ -16,7 +16,11 @@ Well, well, well! What do we have here? A Win32 GUI crackme that spills out bad 
 
 It's empty. But the file's name hints that it can relate to the INPUT that program checks before deciding its "correctness". And how we're gonna find out where is the key? Of course using our incomparable GHIDRA!
 
-As usual we create project, add our crackme EXE, analyze it with default settings. Where should we start? We already know that this crackme includes strings. And MessageBox (at least 1) that displays the text, depending on some conditions (which we'll understand later). So let us start from searhcing all the strings!
+As usual we create project, add our crackme EXE, analyze it with default settings. Where should we start? We already know that this crackme includes strings. And MessageBox (at least 1) that displays the text, depending on some conditions (which we'll understand later). So let us start from searching the strings!
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/3.PNG">
+
+That's interesting. We've found the same string which is displayed on MessageBox. Now we have to jump to it:
 
 
 
