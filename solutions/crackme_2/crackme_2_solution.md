@@ -4,4 +4,8 @@
 
 ## Solution
 
-WIP
+The second crackme that we're going to CRACK and this one, despite being "a beginner" level puzzle, has somewthing that is worth covering, because the basis of it's solution will help us in future way more sophisticated reverse engineering challenges.
+
+After downloading the cracke archive we shall see what it got for us. Unpack the archive and run the EXE :
+
+
