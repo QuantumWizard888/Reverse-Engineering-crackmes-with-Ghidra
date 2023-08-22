@@ -74,7 +74,7 @@ Well, we've finally approached to the gates of cybernetic Oblivion, and we are r
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/11_edited.PNG">
 
-YES! The statically stored sequence of data is our password. And it is the string that has to be in **password.bin** in order to get the success messagebox.
+YES! This sequence of data is our password. And it is the string that has to be in **password.bin** in order to get the success messagebox.
 
 As a last step we somehow have to write this string as BYTES to **password.bin**. And here we have 2 ways:
 
