@@ -8,4 +8,4 @@ The second crackme that we're going to CRACK and this one, despite being "a begi
 
 After downloading the cracke archive we shall see what it got for us. Unpack the archive and run the **C File CrackMe.exe**:
 
-
+https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/1.PNG
