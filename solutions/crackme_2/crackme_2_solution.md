@@ -54,6 +54,10 @@ Let's analyze the decompiled C code of this function:
 - Line 9 is where variable ```iVar1``` is initialized with return value of ```_PasswordFileExists()``` function
 - Lines [10-12] **if section** where value of **1** is assigned ```iVar1``` variable if ```_PasswordFileExists()``` returns **1**
 - Lines [13-18] **else section** if the iVar1 value is other than 1:
-  -
+  - Line 14 is where we open **password.bin** file with a mode ```rb``` (read bytes) using ```_fopen()``` function
+  - Line 15 we read **password.bin** file and write it contains to ```local_2e``` variable using ```_fscanf()``` function
+  - Line 16 we close **password.bin** file using ```_fclose()``` function
+  - Line 17 is where we use ```_strcmp()``` function to compare the string we get from **password.bin** and some ```_password``` data (we'll check this later), the return value of ```_strcmp()``` function is written to ```iVar1``` variable
+- Line 19 we return ```iVar1``` value to the its calling environment
 
 WIP
