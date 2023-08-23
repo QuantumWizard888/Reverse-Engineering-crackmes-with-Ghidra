@@ -94,7 +94,7 @@ with open('password.bin', 'wb') as f:
 Nothing special here:
 1. Create ```msg``` variable with our string as bytes
 2. Using context manager open **password.bin** file in WRITE BYTES mode
-3. Write our string to **password.bin**
+3. Write ```msg``` value to **password.bin**
 
 Execute the program. Be sure that location of your Python program is the same as **password.bin** file.
 
