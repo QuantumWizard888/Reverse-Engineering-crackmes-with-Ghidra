@@ -66,7 +66,7 @@ Some notes about the code.
 
 So, after the program found the file it has to read the inner part of **password.bin** and then compare it to some data located at ```_password``` data segment. Yes, we're getting close to the solution, but be patient! ```_strcmp()``` function returns **0** if contains of the **password.bin** and ```_password``` equal.
 
-The result of comparison is written to ```iVar1``` and then it "transported" to ```_CheckForPassword()``` function which, if ```iVar1``` value is **0**, brings us to the success:
+The result of comparison is written to ```iVar1``` and then it is "transported" to ```_CheckForPassword()``` function which, if ```iVar1``` value is **0**, brings us to the success:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/10.PNG">
 
