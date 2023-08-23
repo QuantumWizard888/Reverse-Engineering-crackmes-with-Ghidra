@@ -93,12 +93,12 @@ with open('password.bin', 'wb') as f:
 
 Nothing special here:
 1. Create ```msg``` variable with our string as bytes
-2. Using context manager open **password.bin** file in READ BYTES mode
-3. Write our string to file
+2. Using context manager open **password.bin** file in WRITE BYTES mode
+3. Write our string to **password.bin**
 
-Execute the program. The location of your Python program must be the same as **password.bin** file.
+Execute the program. Be sure that location of your Python program is the same as **password.bin** file.
 
-And after all the manipulations we're ready to run the crackme file again:
+After all the manipulations we're ready to run the crackme file again:
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/12.PNG">
 
