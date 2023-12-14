@@ -10,7 +10,7 @@ After downloading the crackme archive we shall see what it got for us. Unpack th
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/1.PNG">
 
-Well, well, well! What do we have here? A Win32 GUI crackme that spills out bad words without even having an INPUT? Or maybe we don't see the catch? Again it says that "something" is INCORRECT so, as logic assumes, it can not proceed to the stage where the requirements are satisfied and other messagebox pops up and says how cool we are, i.e the input IS CORRECT. But where is it, this INPUT that must be CORRECT? You can notice that this crackme archive contains some other file: **password.bin**. We're gonne look inside of it (I use HxD hex editor):
+Well, well, well! What do we have here? A Win32 GUI crackme that spills out bad words without even having an INPUT? Or maybe we don't see the catch? Again it says that "something" is INCORRECT so, as logic assumes, it can not proceed to the stage where the requirements are satisfied and other messagebox pops up and says how cool we are, i.e the input IS CORRECT. But where is it, this INPUT that must be CORRECT? You can notice that this crackme archive contains some other file: **password.bin**. We're gonne look inside of it (I use **HxD** hex editor):
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/2.PNG">
 
