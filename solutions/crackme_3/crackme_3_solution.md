@@ -138,7 +138,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-Yeah, yeah, this program doe not have all this "true blood C" things like memory management and pointers, but it does what it has to. And the main thing, the encryption algorithm, is constructed implemented here:
+Yeah, yeah, this program does not have all this "true blood C" things like memory management and pointers, but it does what it has to. And the main thing, the encryption algorithm, is constructed implemented here:
 
 ```
     input_name_str_len = strlen(input_name_str);
