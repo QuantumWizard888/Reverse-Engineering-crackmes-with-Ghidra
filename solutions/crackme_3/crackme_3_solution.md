@@ -102,9 +102,9 @@ The principle is very simple. Every cycle iteration (through ```input_name_str``
 
 There is only thing left. We have to write the keygen program that generates password for every name we want. And we'll do this in a right way. In C.
 
-Create the file with this code
+Create the source file with this code (you can always find **keygen.c** in this crackme folder):
 
-```
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -140,7 +140,7 @@ int main(int argc, char const *argv[])
 
 Yeah, yeah, this program does not have all this "true blood C" things like memory management and pointers, but it does what it has to. And the main thing, the encryption algorithm, is constructed implemented here:
 
-```
+```c
     input_name_str_len = strlen(input_name_str);
     printf("%d\n", input_name_str_len);
 
