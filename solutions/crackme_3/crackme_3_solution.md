@@ -4,7 +4,7 @@
 
 ## Solution
 
-In previous crackmes we've already learned how to use Ghidra basic internal tools like the disassembler view and decompiler to solve those puzzles. But to be honest those riddles were pretty easy and had no other goal but to teach you how to do BASIC REVERSE ENGINEERING analysis. On the contrary in this, 3rd crackme, we've finally come to something serious.
+In previous crackmes we learned how to use Ghidra basic internal tools like the disassembler view and decompiler to solve those puzzles. But to be honest those riddles were pretty easy and had no other goal but to teach you how to do BASIC REVERSE ENGINEERING analysis. On the contrary in this, 3rd crackme, we've finally come to something serious.
 
 Are you ready? Good. Let's have a look at this one.
 
