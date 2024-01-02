@@ -92,11 +92,11 @@ Very interesting! So the ```ds``` section in assembly representation gives us th
 
     <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_3/11.PNG">
 
-    The principle is very simple. Every cycle iteration (through ```input_name_str``` length):
-    1. We take current ```input_name_str``` char representation as byte (accessing by indexing mechanism through adding ```counter``` to the beginning of ```input_name_str```)
-    2. Raise the value we got to the power of 26 (```key_str_len```)
-    3. Take the result and apply modulo operation using ```input_name_str_len```
-    4. Assign the calculated value to the current index of ```real_pass_str``` (yes, address arithmetic)
+The principle is very simple. Every cycle iteration (through ```input_name_str``` length):
+1. We take current ```input_name_str``` char representation as byte (accessing by indexing mechanism through adding ```counter``` to the beginning of ```input_name_str```)
+2. Raise the value we got to the power of 26 (```key_str_len```)
+3. Take the result and apply modulo operation using ```input_name_str_len```
+4. Assign the calculated value to the current index of ```real_pass_str``` (yes, address arithmetic)
 
 - Line 22 finally we get the real password stored in ```real_pass_str``` which is then returned by function
 
