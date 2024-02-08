@@ -173,7 +173,7 @@ Then we need to compile this file. I use ```GCC``` compiler
 gcc keygen.c -o keygen.exe
 ```
 
-Why don't we test our keygen? Let's say we want to generate password for the name **Ares** (remember the 4 characters minimum length)
+Why don't we test our keygen? Let's say we want to generate password for the name **Ares** (remember the 4 characters minimum length requirement)
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_3/12.PNG">
 
