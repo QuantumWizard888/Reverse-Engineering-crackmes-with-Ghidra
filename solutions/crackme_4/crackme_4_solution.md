@@ -49,3 +49,38 @@ Now we're getting close to the origin of this wizardry! You see the ```generate_
   - 1 -> **pointer** to a **string buffer** where the resulting C-string is stored
   - 2 -> the C string that contains a **format string** that follows the same specifications as **format** in ```printf()```
   - 3 -> depending on the **format string**, the function ```sprintf()``` may expect a sequence of additional arguments, each containing a value to be used to replace a **format specifier** in the **format string**
+ 
+And finally ```sprintf()``` returns the **total number of characters written** to ```\*buffer_string``` (if success; if fail - function returns negative number)
+
+Therefore, we have:
+- 1 -> ```\*buffer_string**``` is pointer to array of char which accepts the data from the 2 argument (format string)
+- 2 -> ```"EndIsNear-%d"``` is format string, where ```%d``` is a format specifier which accepts integer value from 3 argument
+- 3 -> ```PID_string``` is variable that holds integer value of ```PID``` that consequently is concatenated with the format string (2 argument)
+
+And only then the final result from the 2 argument will be written to ```\*buffer_string```.
+
+So? Does ```_sprintf()``` function return anything at all? No. The trick is that ```\*buffer_string``` that ```generate_password``` accepts as an argument and which again is used by ```_sprintf()``` is a POINTER to other variable! ```pass_real``` inside ```main()``` function. It is empty when the program starts and only after ```generate_password()``` executes the ```pass_real``` variable (which is an array of char) is filled with the data from ```_sprintf()``` which writes the final string ```"TheEndIsNear-%d"``` to ```buffer_string```.
+
+```"TheEndIsNear-%d"``` is the password. Well, to be precise the password is ```"TheEndIsNear-[PID]"```, where ```PID``` is the value of crackme process ```PID```.
+Time to prove our words.
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/11.PNG">
+
+As programmers we don't want to use other software to manually "construct" password when we can just generate it. Yes, just like that!
+
+```python
+import psutil
+
+
+proc_name = "PIDXploit.exe"
+
+for p in psutil.process_iter():
+
+    if p.name() == proc_name:
+        
+        print("EndIsNear-"+str(p.pid))
+```
+
+Save this Python code as a file and execute while crackme is running and you will see the greatness of programming! The keygen file file will be in the crackme directory.
+
+Again we attain our goal! Congratulations! Well done!
