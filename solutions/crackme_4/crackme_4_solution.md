@@ -38,11 +38,11 @@ This [Line 12].
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/5.PNG">
 
-The ```generate_password()``` takes ```char pass_real``` array variable as an input and then returns something. But what does it return?
+The ```generate_password()``` function takes ```char pass_real``` array variable as an input and then returns something. But what does it return?
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/8.PNG">
 
 Now we're getting close to the origin of this wizardry! You see the ```generate_password()``` takes the pointer to array (empty char array ```buffer_string```) and then this happenes:
 
-- [Line 7] ```PID_string``` (yes, it is declared as int, but later it will be used as a part of string) variable is initialized with the value of ```_getpid()``` function, which is obviously gets the PID of the current process
+- [Line 7] ```PID_string```  variable (yes, it is declared as int, but later it will be used as a part of a string) is initialized with the value of ```_getpid()``` function, which is obviously gets the PID of current process
 - [Line 8] ```_sprintf()``` function takes the ```PID_string``` value, some string ```"TheEndIsNear-%d"``` and ```buffer_string```. But what is the purpose of ```_sprintf()``` function? Is it like ```printf()``` function? Not really. According to [this](https://cplusplus.com/reference/cstdio/sprintf/) documentation
