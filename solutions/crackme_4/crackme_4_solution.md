@@ -34,7 +34,13 @@ Why shouldn't we try to use that hint of this crackme author about PID? If you u
 
 Hmmm. What did we miss?
 
-This.
+This [Line 12].
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/5.PNG">
+
+The ```generate_password()``` takes ```char pass_real``` array variable as an input and then returns something. But what does it return?
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/8.PNG">
+
+Now we're getting close to the origin of this wizardry! You see the ```generate_password()``` takes the pointer to array (empty char array) and then this happenes:
 
