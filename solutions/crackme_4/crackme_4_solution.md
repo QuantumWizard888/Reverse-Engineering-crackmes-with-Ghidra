@@ -4,3 +4,7 @@
 
 ## Solution
 
+In this crackme the author suggests that we try to dive into the process information and get its PID. Somehow this is gonna help us to solve this puzzle. And yes: no bypassing. Honest fight? Good.
+
+We'll start using classic technique, i.e. by searching of strings that .exe file may contain.
+
