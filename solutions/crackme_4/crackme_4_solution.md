@@ -17,3 +17,11 @@ For the purpose of convinience this tutorial already contains renamed variables 
 Great. We've found the first pice of the "treasure map". Now we have to analyze the decompiled source code of this crackme.
 
 <img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/3.PNG">
+
+Nothing fantastic as we see. The ```main``` contains simple scheme of user input (```scanf()```) Line [11], checking input validity Lines [13-14] and then conditional ```if/else``` jump Lines [14, 18]. In Line [13] the programm calls ```strcmp()``` function to check if there is any difference between the true password string and our input string. For this section the ```int is_different``` variable is used. Then if the password is correct we'll see the desired crackme's response. And if not - well, we must try harder.
+
+Why shouldn't we try to use that hint of this crackme author about PID? If you use **ConEmu64** then you will see PID of running exe (our crackme) in terminal status bar (low left corner). Or you may try the amazing **Procmon** tool by Mark Russinovich. Let's have a look.
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/9.PNG">
+
+<img src = "https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/10.PNG">
