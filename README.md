@@ -24,7 +24,7 @@ A collection of random crackme and programming puzzle solutions created using **
 * **Understanding C by learning assembly**: https://www.recurse.com/blog/7-understanding-c-by-learning-assembly
 * **(RU) Уроки ассемблера**: https://ravesli.com/uroki-assemblera/
 * **(RU) Введение в ассемблер**: http://av-assembler.ru/asm/afd/asm.htm
-* **(RU) Как распаковать вредоносное ПО с помощью x64dbg: https://habr.com/ru/companies/varonis/articles/573756/
-* **[Tutorial] How to dump an exe file using x32dbg: https://www.unknowncheats.me/forum/general-programming-and-reversing/211590-dump-exe-file-using-x32dbg.html
+* **(RU) Как распаковать вредоносное ПО с помощью x64dbg**: https://habr.com/ru/companies/varonis/articles/573756/
+* **[Tutorial] How to dump an exe file using x32dbg**: https://www.unknowncheats.me/forum/general-programming-and-reversing/211590-dump-exe-file-using-x32dbg.html
 * **Repository of crackmes for training your skills**: https://crackmes.one/
 * **Free Hack Quest - Reverse Engineering puzzles**: https://freehackquest.com/quests/reverse
