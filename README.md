@@ -10,9 +10,9 @@ A collection of random crackme and programming puzzle solutions created using **
 
 ## === List of crackmes solutions === ##
 
-* [TLOD's Easy Crackme solution](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/crackme_1_solution.md)
-* [RedXen's C File CrackMe solution](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/crackme_2_solution.md)
-* [Danofred's KeygenMe - 01 (update) solution](https://github.com/Marco888Space/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_3/crackme_3_solution.md)
+* [TLOD's Easy Crackme solution](https://github.com/QuantumWizard888/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_1/crackme_1_solution.md)
+* [RedXen's C File CrackMe solution](https://github.com/QuantumWizard888/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_2/crackme_2_solution.md)
+* [Danofred's KeygenMe - 01 (update) solution](https://github.com/QuantumWizard888/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_3/crackme_3_solution.md)
 * [psyr3n's PIDXploit solution](https://github.com/QuantumWizard888/Reverse-Engineering-crackmes-with-Ghidra/blob/main/solutions/crackme_4/crackme_4_solution.md)
 
 ## === Resources === ##
