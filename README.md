@@ -18,7 +18,8 @@ A collection of random crackme and programming puzzle solutions created using **
 ## === Resources === ##
 * **Ghidra**: https://github.com/NationalSecurityAgency/ghidra/
 * **Ghidra courses**: https://ghidra.re/online-courses/
-* **Reverse Engineering Tutorials**: [Videos are here](https://www.youtube.com/playlist?list=PL7iSco3duZcrs-SgnOXaX9qLyB97tnYLO)
+* **Reverse Engineering Tutorials**: [Playlist](https://www.youtube.com/playlist?list=PL7iSco3duZcrs-SgnOXaX9qLyB97tnYLO)
+* **HackadayU: Reverse Engineering with Ghidra | HackadayU**: [Playlist](https://www.youtube.com/playlist?list=PL_tws4AXg7auglkFo6ZRoWGXnWL0FHAEi)
 * **x86 Assembly Guide**: https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 * **x86 Assembly Wikibooks guide**: https://en.wikibooks.org/wiki/X86_Assembly
 * **About Registers**: https://wiki.skullsecurity.org/index.php?title=Registers
