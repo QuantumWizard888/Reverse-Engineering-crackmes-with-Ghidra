@@ -27,6 +27,7 @@ A collection of random crackme and programming puzzle solutions created using **
 * **Understanding C by learning assembly**: https://www.recurse.com/blog/7-understanding-c-by-learning-assembly
 * **(RU) Уроки ассемблера**: https://ravesli.com/uroki-assemblera/
 * **(RU) Введение в ассемблер**: http://av-assembler.ru/asm/afd/asm.htm
+* **(RU) Основы реверсинга, начинаем ломать**: https://codeby.school/blog/informacionnaya-bezopasnost/osnovy-reversinga-nachinaem-lomat
 * **(RU) Как распаковать вредоносное ПО с помощью x64dbg**: https://habr.com/ru/companies/varonis/articles/573756/
 * **(RU) Обзор возможностей отладчика x64dbg. Часть 2. Плагины: NFDetector, Scylla, OllyDumpEx. Ручная распаковка UPX и ASPack**: https://codeby.school/blog/informacionnaya-bezopasnost/fakultativ-po-x64dbg-chast-1-plaginy-scyllahide-xanalyzer-snowman-pe-viewer-apibreak-
 * **[Tutorial] How to dump an exe file using x32dbg**: https://www.unknowncheats.me/forum/general-programming-and-reversing/211590-dump-exe-file-using-x32dbg.html
