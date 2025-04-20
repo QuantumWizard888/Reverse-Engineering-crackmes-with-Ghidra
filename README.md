@@ -25,6 +25,7 @@ A collection of random crackme and programming puzzle solutions created using **
 * **x86 Assembly Wikibooks guide**: https://en.wikibooks.org/wiki/X86_Assembly
 * **About Registers**: https://wiki.skullsecurity.org/index.php?title=Registers
 * **Understanding C by learning assembly**: https://www.recurse.com/blog/7-understanding-c-by-learning-assembly
+* **Reversing MIPS**: https://aswinc.blog/blog/reversing-mips/
 * **(RU) Уроки ассемблера**: https://ravesli.com/uroki-assemblera/
 * **(RU) Введение в ассемблер**: http://av-assembler.ru/asm/afd/asm.htm
 * **(RU) Основы реверсинга, начинаем ломать**: https://codeby.school/blog/informacionnaya-bezopasnost/osnovy-reversinga-nachinaem-lomat
